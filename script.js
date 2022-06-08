@@ -21,11 +21,11 @@ recognizer.onresult = function (event) {
 };
 
 function addToResult() {
-	resultFinal.value += ('. ' + resultText.value);
+	resultFinal.value += (resultText.value + '. ');
 	resultText.value = '';
 }
 
-function speech () {
+function speech() {
 	// Начинаем слушать микрофон и распознавать голос
 	recognizer.start();
 }
@@ -33,10 +33,10 @@ function speech () {
 const synth = window.speechSynthesis;
 const utterance = new SpeechSynthesisUtterance('How about we say this now? This is quite a long sentence to say.');
 
-function talk () {
-	synth.speak (utterance);
+function talk() {
+	synth.speak(utterance);
 }
 
-function stop () {
+function stop() {
 	synth.pause();
 }
