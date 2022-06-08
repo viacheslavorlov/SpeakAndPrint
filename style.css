@@ -1,0 +1,55 @@
+body {
+    background-color: rgba(50, 50, 50, 0.39);
+}
+
+#button-group {
+    display: flex;
+    margin: 100px auto 0;
+    justify-content: space-evenly;
+    width: 80vw;
+}
+
+button {
+    width: 250px;
+    height: 3em;
+    font-size: 2em;
+    border-radius: 10px;
+}
+
+#record {
+    background-color: red;
+    color: yellow;
+}
+
+#record:hover, #listen:hover, #stop:hover {
+    border: solid black 5px;
+    box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+#listen {
+    background-color: lightseagreen;
+    color: yellow;
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    width: 80vw;
+}
+
+label {
+    font-size: 2em;
+}
+
+#result-text {
+    height: 4em;
+    font-size: 20px;
+}
+
+#result-final {
+    height: 4em;
+    font-size: 20px;
+}

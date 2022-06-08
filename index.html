@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru-Ru">
+<head>
+    <meta charset="utf-8">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Распознавание голоса и чтение текста</title>
+</head>
+<body>
+<div id="button-group">
+    <button id="record" onclick="speech()">Запись</button>
+    <button id="add" onclick="addToResult()">Добавить</button>
+    <button id="stop" onclick="stop()">Остановить</button>
+    <button id="listen" onclick="talk()">Проговорить</button>
+</div>
+<div id="result">
+    <label for="result-text">Вы сказали: </label>
+    <textarea id="result-text"></textarea>
+    <label for="result-final">На печать: </label>
+    <textarea id="result-final"></textarea>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
