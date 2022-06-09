@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(50, 50, 50, 0.39);
+    background-color: rgba(197, 147, 22, 0.11);
 }
 
 #button-group {
@@ -11,10 +11,14 @@ body {
 
 button {
     width: 250px;
-    height: 3em;
+    height: 2em;
     font-size: 2em;
-    border-radius: 10px;
+    border-radius: 50px;
+    text-align: center;
+    margin: 0 10px 0 10px;
 }
+
+
 
 #record {
     background-color: red;
@@ -24,6 +28,10 @@ button {
 button:hover {
     border: solid black 5px;
     box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    background-color: orange;
 }
 
 #listen {
@@ -49,12 +57,111 @@ label {
     font-size: 2em;
 }
 
-#result-text {
-    height: 4em;
-    font-size: 20px;
+
+
+#download__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto 0;
+    text-align: center;
+    width: 80vw;
 }
 
-#result-final {
-    height: 4em;
+#download__input-name {
+    height: 3em;
+    margin-bottom: 20px;
+
+}
+
+textarea {
+    padding: 30px;
+    border-radius: 50px;
+    border: none;
+    height: 20vh;
     font-size: 20px;
+    overflow: hidden;
+    resize: none;
+}
+
+.edit {
+    margin: 20px auto 0;
+    text-align: center;
+    width: 80vw;
+    font-size: 2em;
+}
+
+.edit__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 0;
+    text-align: center;
+    width: 80vw;
+}
+
+.edit__wrapper button {
+    width: 250px;
+    font-size: 1.2em;
+}
+
+.redact {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.redact__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 80vw;
+}
+
+.redact__wrapper__div {
+    display: flex;
+    flex-direction: column;
+    border: solid black 1px;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+.redact__symbol {
+    width: 30px;
+    text-align: center;
+}
+
+.redact__rule {
+    width: 100px;
+    text-align: center;
+}
+
+.redact__add__rule {
+    text-align: center;
+    height: 30px;
+    width: 80vw;
+    font-size: 1.3em;
+    border-radius: 10px;
+    background-color: rgb(28, 203, 60);
+}
+
+.redact__delete__rule {
+    text-align: center;
+    height: 30px;
+    font-size: 1.3em;
+    border-radius: 10px;
+    background-color: orangered;
+}
+
+.redact__text {
+    text-align: center;
+    height: 50px;
+    width: 80vw;
+    font-size: 1.3em;
+    border-radius: 10px;
+    background-color: rgb(28, 203, 60);
 }
