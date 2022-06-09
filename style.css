@@ -21,7 +21,7 @@ button {
     color: yellow;
 }
 
-#record:hover, #listen:hover, #stop:hover {
+button:hover {
     border: solid black 5px;
     box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.3);
 }
@@ -38,6 +38,11 @@ button {
     margin: 0 auto;
     text-align: center;
     width: 80vw;
+}
+
+#add {
+    background-color: rgb(28, 203, 60);
+    color: rgb(10, 10, 1);
 }
 
 label {
