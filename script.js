@@ -13,9 +13,11 @@ recognizer.lang = 'ru-Ru';
 // Используем колбек для обработки результатов
 recognizer.onresult = function (event) {
 	const result = event.results[event.resultIndex];
-	if (result.isFinal) {
-		console.log('Вы сказали: ' + result[0].transcript);
-		resultText.textContent = result[0].transcript;
+	// console.log('Вы сказали: ' + result[0].transcript);
+	if (resultText.value === '') {
+		resultText.value = result[0].transcript;
+	} else {
+		alert('Возможно, у вас есть несохраненное значение в поле голосового ввода!');
 	}
 
 };
