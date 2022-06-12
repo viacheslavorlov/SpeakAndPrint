@@ -8,21 +8,22 @@
 <body>
 <div id="button-group">
     <button id="record" onclick="speech()">Запись</button>
-    <button id="add" onclick="addToResult()">Добавить</button>
+    <button id="add">Добавить</button>
     <!--    <button id="stop" onclick="stop()">Остановить</button>-->
     <!--    <button id="listen" onclick="talk()">Проговорить</button>-->
 </div>
+
 <div id="result">
     <label for="result-text">Вы сказали: </label>
     <textarea id="result-text"></textarea>
     <label for="result-final">На печать: </label>
     <textarea id="result-final"></textarea>
+    <button id="result-for-print-btn">Перенести текст для печати</button>
+    <h2>Текст для печати: </h2>
+    <div id="result-for-print"></div>
 </div>
-<div id="download__container">
-    <label for="download__input-name">Название сохраняемого файла: </label>
-    <input type="text" id="download__input-name">
-    <button id="download__button">Скачать файл.</button>
-</div>
+
+
 <div>
     <h3 class="edit">Кнопки для коррекции текста: </h3>
     <div class="edit__wrapper">
@@ -34,20 +35,21 @@
 </div>
 
 <div class="redact">
-    <h3>Набор правил диктовки текста: </h3>
+    <label for="redact__collection__select">Набор правил диктовки текста:</label>
+    <select name="collection" id="redact__collection__select">
+        <option value="стандарт">Стандарт</option>
+        <option value="простой">Простой</option>
+    </select>
     <button class="redact__text">Заменить ключевые слова на символы</button>
     <div class="redact__wrapper">
-        <div class="redact__wrapper__div">
-            <label> Символ:
-                <input type="text" name="" class="redact__symbol">
-            </label>
-            <label> Заменит:
-                <input type="text" name="" class="redact__rule">
-            </label>
-            <button class="redact__delete__rule">-</button>
-        </div>
+
     </div>
     <button class="redact__add__rule">+</button>
+</div>
+<div id="download__container">
+    <label for="download__input-name">Название сохраняемого файла: </label>
+    <input type="text" id="download__input-name">
+    <button id="download__button">Скачать файл.</button>
 </div>
 
 <script src="script.js"></script>

@@ -48,6 +48,10 @@ button:active {
     width: 80vw;
 }
 
+#result-text {
+    height: 8vh;
+}
+
 #add {
     background-color: rgb(28, 203, 60);
     color: rgb(10, 10, 1);
@@ -84,6 +88,23 @@ textarea {
     overflow: hidden;
     resize: none;
 }
+#result-for-print {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: justify;
+    width: 80vw;
+}
+#result-for-print-btn {
+    text-align: center;
+    height: 50px;
+    width: 80vw;
+    margin: 0 auto;
+    font-size: 1.3em;
+    border-radius: 10px;
+    background-color: rgb(28, 203, 60);
+}
 
 .edit {
     margin: 20px auto 0;
@@ -112,6 +133,11 @@ textarea {
     flex-direction: column;
     width: 80vw;
     margin: 0 auto;
+}
+
+.redact__collection {
+    font-size: 25px;
+    font-weight: 600;
 }
 
 .redact__wrapper {
