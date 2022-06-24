@@ -57,7 +57,8 @@ function speech() {
 
 // Загрузка файла
 const downloadBtn = document.querySelector('#download__button'),
-	fileName = document.querySelector('#download__input-name');
+	fileName = document.querySelector('#download__input-name'),
+	textForPrint = document.querySelector('#result-for-print');
 
 function download(filename, text) {
 	if (text.length > 0 && filename.length > 0) {
@@ -78,7 +79,7 @@ function download(filename, text) {
 }
 
 downloadBtn.addEventListener('click', () => {
-	download(fileName.value, resultFinal.value);
+	download(fileName.value, textForPrint.textContent);
 });
 
 // обработка текста

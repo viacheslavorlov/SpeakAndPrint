@@ -191,3 +191,7 @@ textarea {
     border-radius: 10px;
     background-color: rgb(28, 203, 60);
 }
+
+#result-for-print {
+    background-color: white;
+}
