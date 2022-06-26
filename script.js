@@ -2,6 +2,7 @@ const resultText = document.querySelector('#result-text');
 const resultFinal = document.querySelector('#result-final');
 
 // Создаем распознаватель
+
 const recognizer = new webkitSpeechRecognition();
 
 // Ставим опцию, чтобы распознавание началось ещё до того, как пользователь закончит говорить
@@ -261,7 +262,9 @@ const divForPrint = document.querySelector('#result-for-print');
 addToDivBtn.addEventListener('click', (e) => {
 	console.log(e.target);
 	if (resultFinal.value !== '') {
-		divForPrint.insertAdjacentHTML('beforeend', `<p class="text-for-print">    ${resultFinal.value}</p>`);
+		divForPrint.insertAdjacentHTML(
+			'beforeend', `<p class="text-for-print">    ${resultFinal.value}</p>`
+		);
 		resultFinal.value = '';
 	} else {
 		alert('Введите данные с помощью голосового ввода');
