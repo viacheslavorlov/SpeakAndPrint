@@ -30,7 +30,7 @@ function addToResult(text, addTo) {
 			addTo.value += (text.value + '.');
 			text.value = '';
 		} else {
-			addTo.value += (' ' + text.value + '.');
+			addTo.value += (' ' + text.value.trim() + '.');
 			text.value = '';
 		}
 	} else {
@@ -159,7 +159,7 @@ const addRuleBtn = document.querySelector('.redact__add__rule'),
 
 addRuleBtn.addEventListener('click', () => {
 	const div = document.createElement('div');
-	div.classList.add('redact__wrapper__div');      // сдздаем дополнительное правило
+	div.classList.add('redact__wrapper__div');      // создаем дополнительное правило
 	div.innerHTML = `<label> Символ:
                 <input type="text" name="" class="redact__symbol">
             </label>
